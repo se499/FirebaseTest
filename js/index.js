@@ -37,3 +37,7 @@ var firebaseConfig =
       }
 
   });
+$("#btn-resetPassword").click(function(){
+    var auth = firebase.auth();
+    var email = $("#btn-resetPassword")
+});
