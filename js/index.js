@@ -13,30 +13,10 @@ var firebaseConfig =
   firebase.auth.Auth.Persistence.LOCAL;
   firebase.auth.Auth.Persistence.SESSION;
   
-  $("#btn-login").click(function(){
-      var email = $("#email").val();
-      var password = $("#password").val();
-
-      if(email != "" && password != null)
-      {
-        var result = firebase.auth().signInWithEmailAndPassword(email.value, password.value);
-
-        result.catch(function(error)
-        {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-
-            console.log(errorCode);
-            console.log(errorMessage);
-            window.alert("Message : " + errorMessage);
-        });
-      }
-      else
-      {
-        window.alert("Please fill out all fields.");
-      }
-
+  $("#btn-logout").click(function(){
+     firebase.auth().signOut();
   });
+
 $("#btn-resetPassword").click(function(){
     var auth = firebase.auth();
     var email = $("#email").val();
