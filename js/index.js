@@ -1,12 +1,11 @@
-var firebaseConfig = 
-{
-    apiKey: "AIzaSyDejmidl7GbFGDpoaoz2OQB24eH1nIYyE8",
-    authDomain: "fir-webapp-f9445.firebaseapp.com",
-    projectId: "fir-webapp-f9445",
-    storageBucket: "fir-webapp-f9445.appspot.com",
-    messagingSenderId: "862360001220",
-    appId: "1:862360001220:web:e30fe0d92879cdbca5c791",
-    measurementId: "G-0XTXKB0TD6"
+const firebaseConfig = {
+    apiKey: "AIzaSyD6CI5NcdjaUpRuV0s7g66-FrEuaLgsLFY",
+    authDomain: "icww-play-bots.firebaseapp.com",
+    projectId: "icww-play-bots",
+    storageBucket: "icww-play-bots.appspot.com",
+    messagingSenderId: "1001571269772",
+    appId: "1:1001571269772:web:56d111a02ac2c2750a8fa9",
+    measurementId: "G-ERXYT8D2ML"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -36,6 +35,6 @@ $("#btn-resetPassword").click(function(){
             
         });
     }else{
-        window.alert("Please write your email first.");
+        window.alert("Please enter your email");
     }
 });
